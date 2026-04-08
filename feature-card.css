@@ -1,0 +1,52 @@
+
+/* ✨ Content animation */
+.car-card h3,
+.car-card p,
+.car-card .car-specs span {
+  transition: all 0.3s ease;
+}
+
+.car-card:hover h3 {
+  transform: translateY(-3px);
+}
+
+.car-card:hover p {
+  color: #e4e4ff;
+}
+
+.car-card:hover .car-specs span {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.car-image {
+  height: 160px;
+  border-radius: 18px;
+  margin-bottom: 16px;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.4s ease;
+}
+
+/* Zoom på hover */
+.car-card:hover .car-image {
+  transform: scale(1.05);
+}
+
+
+.server-image {
+  height: 220px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+
+  background:
+    radial-gradient(circle at center, rgba(124,92,255,0.25), transparent 60%),
+    linear-gradient(180deg, rgba(0,0,0,0.2), rgba(0,0,0,0.7)),
+    url("./images/Logo/Server_image.jpeg") center / contain no-repeat;
+
+  background-color: #0a0a0f;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+  margin-bottom: 18px;
+}
